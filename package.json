@@ -1,0 +1,34 @@
+{
+  "name": "wribbenhall-spa",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "animate.css": "^3.7.2",
+    "dotenv": "^8.2.0",
+    "emailjs-com": "^2.4.1",
+    "google-map-react": "^1.1.5",
+    "react": "^16.12.0",
+    "react-animate-on-scroll": "^2.1.5",
+    "react-dom": "^16.12.0",
+    "react-notify-toast": "^0.5.1",
+    "react-particles-js": "^2.7.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "2.0.5",
+    "smoothscroll-polyfill": "^0.4.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

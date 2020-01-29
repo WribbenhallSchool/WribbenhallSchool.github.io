@@ -1,0 +1,40 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;    
+}
+
+html, body {
+    overflow-x: hidden;
+    scrollbar-width: none;
+
+    padding: 0;
+    margin: 0;
+}
+
+.stop-scroll{
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.rotate-prompt{
+    height: 100vh;
+    width: 100vw;
+    background-color: red;
+    display: none;
+    color: black;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+:root {
+    --off-white: #fafafa;
+}
+

@@ -1,0 +1,33 @@
+.file-container a {
+    text-decoration: none;
+}
+
+.file-container li:hover {
+    transform: scale(1.025);
+}
+.file-container li {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    transition: 0.1s;
+}
+
+#fileSearch{
+    display: block;
+    width: 50%;
+    height: 25px;
+    transition: 0.2s;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: rgb(250, 249, 249);
+}
+
+.filesNotFound {
+    background-color: red !important;
+}
+
+#fileSearch:focus{
+    width: 75%;
+    outline: none !important;
+    border: 1px solid red;
+    box-shadow: 0 0 10px #719ECE;
+}

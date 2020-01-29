@@ -1,0 +1,70 @@
+/* Welcome section */
+.Welcome-light {
+    background: url("../Images/ForestSilhouette1.png") no-repeat, linear-gradient(to bottom, #3B4371, #F3904F); 
+    background-size: contain;
+    background-position: bottom;
+}
+
+.Welcome-dark {
+    background: url("../Images/ForestSilhouette1.png") no-repeat, linear-gradient(to top, #434343, #000000) !important;
+    background-size: contain !important;
+    background-position: bottom !important;
+    color: rgb(236, 225, 225);
+
+}
+.Welcome-light-mobile {
+    background: url("../Images/ForestSilhouette2.png") no-repeat, linear-gradient(to bottom, #3B4371, #F3904F) !important;
+    background-size: contain !important;
+    background-position: bottom !important;
+}
+.Welcome-dark-mobile {
+    background: url("../Images/ForestSilhouette2.png") no-repeat, linear-gradient(to top, #434343, #000000) !important;
+    background-size: contain !important;
+    background-position: bottom !important;
+    color: rgb(207, 205, 202);
+}
+
+.Profile-light { 
+    background: rgb(214,140,94);
+    background: linear-gradient(180deg, rgba(214,140,94,1) 0%, rgba(255,255,255,1) 100%);
+    color: #333333;
+}
+.Profile-dark {
+    background: #000000; 
+    color: #cfcdca;
+}
+.About-light {
+    background: rgb(214,140,94);
+    background: linear-gradient(0deg, rgba(214,140,94,1) 0%, rgba(0,0,0,1) 100%);
+    color: rgb(207, 205, 202);
+}
+.About-dark {
+    background: #000000; 
+    /* color: rgb(207, 205, 202); */
+    color: rgb(185, 170, 170);
+}
+.Staff-light{
+    background: rgb(255, 255, 255);
+    color: black; 
+}
+.Staff-dark{
+    background: #000000; 
+    background: -webkit-linear-gradient(to bottom, #434343, #000000); 
+    background: linear-gradient(to top, #434343, #000000);
+    color: rgb(185, 170, 170);
+}
+.Default-light{
+    background-color: white;
+}
+.Default-dark{
+    background: #000000; 
+    color: rgb(185, 170, 170);
+}
+
+/* #Contact, #FAQ, #Policies{
+    background: #FFEFBA;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA);
+} */
+
+
