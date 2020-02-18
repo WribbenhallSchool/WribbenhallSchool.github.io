@@ -97,6 +97,10 @@ class Main extends Component {
     handleResize = () => {
         this.getSectionPositions();
 
+        if(window.innerWidth/window.innerHeight === 3){
+            // console.log("dim")
+        }
+
         //Only do shit for home page
         if(this.state.currentPageName === "Home"){
 
@@ -195,7 +199,8 @@ class Main extends Component {
         const sections = React.Children.map(children, child =>
             React.cloneElement(child, {
                     large: large, 
-                    darkmode: this.state.darkmode
+                    darkmode: this.state.darkmode,
+                    scrollPage: this.scrollPage
                 }
             )
         );

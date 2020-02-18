@@ -5,6 +5,11 @@ import Particles from 'react-particles-js';
 import './home.css'
 
 function Welcome(props) {
+
+    const scroll = () => {
+        props.scrollPage("About");
+    }
+    
     return (
         <div className="welcome-section" >
             
@@ -52,6 +57,8 @@ function Welcome(props) {
                     </p>
                 </ScrollAnimation>
             </div>
+
+            <div className="scroll-indicator" onClick={scroll}></div>
             
         </div>
     );

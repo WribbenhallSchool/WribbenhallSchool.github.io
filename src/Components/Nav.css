@@ -1,6 +1,7 @@
 /* HAMBUGER */
 .hamburger-container {
     left: 5px;
+    animation:wobble 1s ease-in-out;
 }
 @media (hover: hover) {
     .hamburger-container:hover{

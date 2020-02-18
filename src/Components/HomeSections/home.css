@@ -37,15 +37,16 @@
 
 /* Details section */
 .map{
-    height: 450px;
-    width: 100%;
+    height: 350px;
+    width: 70%;
+    margin: 0 auto;
     border: 1px solid rgb(199, 183, 183);
 }
 .map p { text-align: center; }
 .contact-details{
     text-align: center;
-    padding-top: 5px;
-    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 25px;
 }
 .contact-details h4{
     text-decoration: underline;
@@ -69,6 +70,52 @@
 .staff-images { width: 45%; text-align: center; }
 .staff-images-container{ margin-top: 50px; margin-bottom: 50px; }
 .staff-images h4 { margin: 10px 0px 10px 0px; }
+
+.scroll-indicator::before{
+    content: '╲╱';
+    color: #fff;
+    position: absolute;
+    opacity: 1;
+    font-size: 20px;
+    text-align: center;
+    animation: bounce 1.5s ease infinite;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  
+  @keyframes bounce {
+    50% {
+      transform: translateY(-50%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  
+.scroll-indicator {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    transition: 0.2s;
+}
+
+@media (hover: hover) {
+    .scroll-indicator:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+}
 
 @media only screen and (max-width: 870px) {
     .staff-images-container{

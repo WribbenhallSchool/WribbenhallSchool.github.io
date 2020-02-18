@@ -12,12 +12,12 @@ import ScrollAnimation from 'react-animate-on-scroll';
  */
 function Section(props) {
 
-    const { id, children, large, darkmode, lightStyle, darkStyle } = props;
+    const { id, children, large, darkmode, lightStyle, darkStyle, scrollPage } = props;
 
     // Adds darkmode prop to each section content
     const content = React.Children.map(children, child => {
         if(React.isValidElement(child)){
-            return React.cloneElement(child, { darkmode: darkmode })
+            return React.cloneElement(child, { darkmode: darkmode, scrollPage: scrollPage })
         }
     });
 
@@ -33,7 +33,7 @@ function Section(props) {
     return (
         <div className={"section " + style} id={id} >
             <div className={large ? "section-content section-large" : "section-content"}>
-                <ScrollAnimation animateIn='fadeIn' duration={1.5}  >
+                <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut' duration={1}  >
                     {content}
                 </ScrollAnimation>
             </div>

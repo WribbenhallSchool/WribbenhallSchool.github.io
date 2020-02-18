@@ -130,6 +130,7 @@ class Contact extends Component {
                 </div>
                 <br/>
                 {this.form}
+                <p style={{textAlign: "center"}}>Alternatively email us directly at: ewells@wribbenhallschool.co.uk</p>
             </React.Fragment>
         );
     }

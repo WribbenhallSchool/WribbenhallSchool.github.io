@@ -26,7 +26,7 @@
 
 .Profile-light { 
     background: rgb(214,140,94);
-    background: linear-gradient(180deg, rgba(214,140,94,1) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(180deg, rgba(214,140,94,1) 0%, rgba(237,206,186,1) 9%, rgba(255,255,255,1) 26%);
     color: #333333;
 }
 .Profile-dark {
