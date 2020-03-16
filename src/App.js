@@ -68,7 +68,7 @@ class App extends Component {
                                 <Section id="About" Name="About Us" lightStyle="custom"> {/* About section */}
                                     <About/> {/* About content */}
                                 </Section>
-                                <Section id="Profile" Name="Pupil Profile" lightStyle="custom"> {/* Student profile section */}
+                                <Section id="Profile" Name="Pupil Profile"> {/* Student profile section */}
                                     <Profile/> {/* Profile content */}
                                 </Section>
                                 <Section id="Details" Name="Our Details"> {/* Details section */}

@@ -23,22 +23,13 @@
     color: rgb(207, 205, 202);
 }
 
-.Profile-light { 
 
-}
-.Profile-dark {
-    background: #000000; 
-    color: #cfcdca;
-}
+
 .About-light {
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(47,30,20,1) 13%, rgba(158,78,28,1) 35%, rgba(255,255,255,1) 100%);
 }
-.About-dark {
-    background: #000000; 
-    /* color: rgb(207, 205, 202); */
-    color: rgb(185, 170, 170);
-}
+
 .Staff-light{
     background: rgb(255, 255, 255);
     color: black; 
