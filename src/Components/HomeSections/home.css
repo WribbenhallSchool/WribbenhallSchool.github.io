@@ -77,22 +77,23 @@
     position: absolute;
     opacity: 1;
     font-size: 20px;
+    letter-spacing: -0.5px;
     text-align: center;
     animation: bounce 1.5s ease infinite;
     bottom: 10px;
     left: 0;
     right: 0;
     margin: 0 auto;
-  }
+}
   
-  @keyframes bounce {
+@keyframes bounce {
     50% {
       transform: translateY(-50%);
     }
     100% {
       transform: translateY(0);
     }
-  }
+}
   
   
 .scroll-indicator {
@@ -101,12 +102,11 @@
     left: 0;
     right: 0;
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.8);
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
     transition: 0.2s;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
 }
 
 @media (hover: hover) {
@@ -133,4 +133,11 @@
     .staff1{ float: none; }
     .staff2{ float: none; }
     .staff-images img { width: 50px; height: 50px; border-radius: 15px; }
+    .scroll-indicator::before{
+        font-size: 24px !important;
+    }
+    .scroll-indicator {
+        width: 65px;
+        height: 65px;
+    }
 }

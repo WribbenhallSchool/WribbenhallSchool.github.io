@@ -119,13 +119,7 @@ class App extends Component {
                             </Page>
                         )} />
 
-                        <Route render = {routerprops => (
-                            <Page pageNames={pageNames} pageName={pageNames[0][0]} showDots={true} large={false} >
-                                <Section id="404" Name="404" darkStyle="default" lightStyle="default"> {/* Welcome section */}
-                                    <PageNotFound/> {/* Welcome content */}
-                                </Section>
-                            </Page>
-                        )} />
+                        <Route component={PageNotFound} /> {/* Go home on 404 */}
 
                     </Switch>
                 </BrowserRouter>

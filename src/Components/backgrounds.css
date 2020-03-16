@@ -10,7 +10,6 @@
     background-size: contain !important;
     background-position: bottom !important;
     color: rgb(236, 225, 225);
-
 }
 .Welcome-light-mobile {
     background: url("../Images/ForestSilhouette2.png") no-repeat, linear-gradient(to bottom, #3B4371, #F3904F) !important;
@@ -25,18 +24,15 @@
 }
 
 .Profile-light { 
-    background: rgb(214,140,94);
-    background: linear-gradient(180deg, rgba(214,140,94,1) 0%, rgba(237,206,186,1) 9%, rgba(255,255,255,1) 26%);
-    color: #333333;
+
 }
 .Profile-dark {
     background: #000000; 
     color: #cfcdca;
 }
 .About-light {
-    background: rgb(214,140,94);
-    background: linear-gradient(0deg, rgba(214,140,94,1) 0%, rgba(0,0,0,1) 100%);
-    color: rgb(207, 205, 202);
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(47,30,20,1) 13%, rgba(158,78,28,1) 35%, rgba(255,255,255,1) 100%);
 }
 .About-dark {
     background: #000000; 
