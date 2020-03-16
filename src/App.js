@@ -32,6 +32,8 @@ import Gallery from "./Components/GallerySections/Gallery";
 // Calendar Page Sections
 import Calendar from './Components/CalendarSections/Calendar';
 
+import PageNotFound from './Components/404Sections/PageNotFound';
+
 
 class App extends Component {
 
@@ -79,7 +81,7 @@ class App extends Component {
                         )} />
 
                         {/* Contact page */}
-                        <Route path={pageNames[1][1]} render = {routerprops => (
+                        <Route exact path={pageNames[1][1]} render = {routerprops => (
                             <Page pageNames={pageNames} pageName={pageNames[1][0]} showDots={true} large={false}>
                                 <Section id="Contact" Name="Contact Us" >
                                     <Contact/> {/* Contact section */}
@@ -91,7 +93,7 @@ class App extends Component {
                         )} />
 
                         {/* Policies page */}
-                        <Route path={pageNames[2][1]} render = {routerprops => (
+                        <Route exact path={pageNames[2][1]} render = {routerprops => (
                             <Page pageNames={pageNames} pageName={pageNames[2][0]} showDots={false} large={true}>
                                 <Section id="Policies" Name="Our Policies" >
                                     <Policies/> {/* Policies section */}
@@ -100,7 +102,7 @@ class App extends Component {
                         )} />
 
                         {/* Gallery page */}
-                        <Route path={pageNames[3][1]} render = {routerprops => (
+                        <Route exact path={pageNames[3][1]} render = {routerprops => (
                             <Page pageNames={pageNames} pageName={pageNames[3][0]} showDots={false} large={true}>
                                 <Section id="Gallery" Name="Gallery" darkStyle="default" lightStyle="default">
                                     <Gallery/> {/* Gallery section */}
@@ -109,10 +111,18 @@ class App extends Component {
                         )} />
 
                         {/* Calendar page */}
-                        <Route path={pageNames[4][1]} render = {routerprops => (
+                        <Route exact path={pageNames[4][1]} render = {routerprops => (
                             <Page pageNames={pageNames} pageName={pageNames[4][0]} showDots={false} large={true}>
                                 <Section id="Calendar" Name="Calendar" darkStyle="default" lightStyle="default">
                                     <Calendar/> {/* Gallery section */}
+                                </Section>
+                            </Page>
+                        )} />
+
+                        <Route render = {routerprops => (
+                            <Page pageNames={pageNames} pageName={pageNames[0][0]} showDots={true} large={false} >
+                                <Section id="404" Name="404" darkStyle="default" lightStyle="default"> {/* Welcome section */}
+                                    <PageNotFound/> {/* Welcome content */}
                                 </Section>
                             </Page>
                         )} />
