@@ -9,6 +9,8 @@ function Welcome(props) {
     const scroll = () => {
         props.scrollPage("About");
     }
+
+
     
     return (
         <div className="welcome-section" >

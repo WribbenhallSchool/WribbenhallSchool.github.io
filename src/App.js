@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Notifications, {notify} from 'react-notify-toast'; //Toast notifications
 
 import smoothscroll from 'smoothscroll-polyfill'; //Adds smooth scroll support for unsupporting browsers (safari)
 
@@ -42,6 +43,19 @@ class App extends Component {
         require('dotenv').config()
         
         smoothscroll.polyfill(); //Initiates smooth scroll functionality
+
+    }
+
+    showAnnouncement = (msg) => {
+        notify.show(
+            msg, 
+            "warning", 
+            15000
+        );
+    }
+
+    componentDidMount(){
+        // this.showAnnouncement("Unfortunately due to the current situation regarding COVID-19 we have decided to close. We aim to re-open as soon as the situation resolves. Thank you.");
     }
 
     render() {
@@ -56,6 +70,7 @@ class App extends Component {
 
         return (
             <div className="App">
+                <Notifications />
                 <BrowserRouter>
                     <Switch>
 
