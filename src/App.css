@@ -109,7 +109,7 @@ p { letter-spacing: 1px; line-height: 22px; text-align: justify; }
     }
     /* Contact form switch button mobile sizes */
     .option-buttons {
-        width: 200px !important;
+        width: 260px !important;
         margin-top: 10px !important;
         margin-bottom: 10px !important;
     }
