@@ -32,7 +32,7 @@ import Gallery from "./Components/GallerySections/Gallery";
 // Calendar Page Sections
 import Calendar from './Components/CalendarSections/Calendar';
 
-import PageNotFound from './Components/404Sections/PageNotFound';
+import PageNotFound from './404';
 
 
 class App extends Component {
