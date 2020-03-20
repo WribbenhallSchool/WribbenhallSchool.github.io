@@ -50,12 +50,13 @@ class App extends Component {
         notify.show(
             msg, 
             "warning", 
-            15000
+            8000
         );
     }
 
     componentDidMount(){
-        // this.showAnnouncement("Unfortunately due to the current situation regarding COVID-19 we have decided to close. We aim to re-open as soon as the situation resolves. Thank you.");
+        //"Unfortunately due to the current situation regarding COVID-19 we have decided to close. We aim to re-open as soon as the situation resolves. Thank you."
+        this.showAnnouncement("COVID-19: Wribbenhall School is an alternative provision for Special Needs Education, following Government advice we currently remain open.");
     }
 
     render() {

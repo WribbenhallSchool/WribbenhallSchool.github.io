@@ -69,6 +69,10 @@
 .topBtn-dark .hamburger:before{ background: rgb(197, 193, 193); }
 .topBtn-dark .hamburger{ background: rgb(197, 193, 193); }
 
+.toast-notification{
+    z-index: 1 !important;
+}
+
 @media (hover: hover) {
     .dark-mode-button img:hover {
         transform: scale(1.2);
@@ -127,6 +131,13 @@ p { letter-spacing: 1px; line-height: 22px; text-align: justify; }
     #Policies {align-items: unset !important; }
     #Calendar > .section-content { width: 100%; }
     #Policies > .section-content{ width: 85% !important; }
+
+    .toast-notification{
+        width: 60% !important;
+    }
+    .toast-notification span{
+        padding: 5px !important;
+    }
 
 }
 
