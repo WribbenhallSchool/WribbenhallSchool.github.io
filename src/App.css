@@ -73,6 +73,11 @@
     z-index: 1 !important;
 }
 
+.toast-notification span:hover{
+    cursor: default !important;
+}
+
+
 @media (hover: hover) {
     .dark-mode-button img:hover {
         transform: scale(1.2);

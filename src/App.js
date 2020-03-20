@@ -43,7 +43,6 @@ class App extends Component {
         require('dotenv').config()
         
         smoothscroll.polyfill(); //Initiates smooth scroll functionality
-
     }
 
     showAnnouncement = (msg) => {
@@ -55,7 +54,6 @@ class App extends Component {
     }
 
     componentDidMount(){
-        //"Unfortunately due to the current situation regarding COVID-19 we have decided to close. We aim to re-open as soon as the situation resolves. Thank you."
         this.showAnnouncement("COVID-19: Wribbenhall School is an alternative provision for Special Needs Education, following Government advice we currently remain open.");
     }
 
