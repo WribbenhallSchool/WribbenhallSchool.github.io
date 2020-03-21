@@ -61,22 +61,13 @@
     cursor: pointer;
 }
 
-.topBtn-dark{
-    background-color: rgba(189, 175, 175, 0.3);
-}
-
+.topBtn-dark{ background-color: rgba(189, 175, 175, 0.3); }
 .topBtn-dark .hamburger:after{ background: rgb(197, 193, 193); }
 .topBtn-dark .hamburger:before{ background: rgb(197, 193, 193); }
 .topBtn-dark .hamburger{ background: rgb(197, 193, 193); }
 
-.toast-notification{
-    z-index: 1 !important;
-}
-
-.toast-notification span:hover{
-    cursor: default !important;
-}
-
+.toast-notification { z-index: 1 !important; }
+.toast-notification span:hover{ cursor: default !important; }
 
 @media (hover: hover) {
     .dark-mode-button img:hover {
@@ -146,8 +137,8 @@ p { letter-spacing: 1px; line-height: 22px; text-align: justify; }
 
 }
 
-@media only screen and (max-height: 520px){
-    .welcome-content h1 { font-size: 28px !important; margin-top: -80px;}
+@media only screen and (max-height: 520px) {
+    .welcome-content h1 { font-size: 28px !important; margin-top: -80px; }
     .welcome-content p {
         font-size: 12px;
         padding-left: 70px;

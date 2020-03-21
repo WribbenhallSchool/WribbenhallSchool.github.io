@@ -28,7 +28,7 @@ class Main extends Component {
         let darkmode_temp;
 
         // Between 9pm and 6am
-        if( (time >= 21 && time <= 24) || (time >= 1 && time <= 6) ){
+        if( (time >= 21 && time <= 23) || (time >= 0 && time <= 6) ){
             darkmode_temp = true;
         }else{
             darkmode_temp = false;
