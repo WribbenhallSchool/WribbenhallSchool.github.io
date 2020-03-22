@@ -61,17 +61,12 @@
     cursor: pointer;
 }
 
-.topBtn-dark{
-    background-color: rgba(189, 175, 175, 0.3);
-}
-
+.topBtn-dark{ background-color: rgba(189, 175, 175, 0.3); }
 .topBtn-dark .hamburger:after{ background: rgb(197, 193, 193); }
 .topBtn-dark .hamburger:before{ background: rgb(197, 193, 193); }
 .topBtn-dark .hamburger{ background: rgb(197, 193, 193); }
 
-.toast-notification{
-    z-index: 1 !important;
-}
+.toast-notification{ z-index: 1 !important; }
 
 @media (hover: hover) {
     .dark-mode-button img:hover {
