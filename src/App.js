@@ -52,7 +52,6 @@ class App extends Component {
             8000
         );
     }
-
     componentDidMount(){
         this.showAnnouncement("COVID-19: Wribbenhall School is an alternative provision for Special Needs Education, following Government advice we currently remain open. Please observe social distance.");
     }
