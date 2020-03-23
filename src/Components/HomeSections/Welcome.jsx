@@ -52,7 +52,7 @@ function Welcome(props) {
             <div className="welcome-content">
                 <h1>Wribbenhall School</h1>
                 <ScrollAnimation animateIn='fadeInUp' duration={1} delay={100}>
-                    <p className="justify animated animatedFadeInUp fadeInUp">
+                    <p className="animated animatedFadeInUp fadeInUp">
                         We are a Select, home-based Specialist Primary School, supporting 
                         children with Social, Emotional and Mental Health conditions to 
                         access education and therapy through de-escalating school-based anxiety.
