@@ -57,18 +57,23 @@
 .contact-details li {
     padding-bottom: 10px;
 }
-.staff-images img {
+.staff img {
     width: 100px;
     height: 100px;
     object-fit: cover;
     border-radius: 25px;
+    display: inline-block;
 }
-.staff1{ float: left; }
-.staff2{ float: right; }
-.staff-images::after{ clear: both; }
-.staff-images { width: 45%; text-align: center; }
-.staff-images-container{ margin-top: 50px; margin-bottom: 50px; }
-.staff-images h4 { margin: 10px 0px 10px 0px; }
+
+.staff {
+    margin: 50px;
+    margin-bottom: 100px;
+    width: calc(100% - 100px);
+    text-align: center;
+}
+.staff p {
+    text-align: justify;
+}
 
 .scroll-indicator::before{
     content: '╲╱';
