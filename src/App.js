@@ -47,9 +47,13 @@ class App extends Component {
 
     showAnnouncement = (msg) => {
         notify.show(
-            msg, 
+            <div className="toast-notification-content">
+                {msg}
+                <br/><br/>
+                <button onClick={notify.hide}>close</button>
+            </div>, 
             "warning", 
-            8000
+            -1
         );
     }
     componentDidMount(){

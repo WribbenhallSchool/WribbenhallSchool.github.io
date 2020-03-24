@@ -67,8 +67,15 @@
 .topBtn-dark .hamburger{ background: rgb(197, 193, 193); }
 
 .toast-notification { z-index: 1 !important; }
-.toast-notification span:hover{ cursor: default !important; }
-
+.toast-notification-content button{
+    padding: 6px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+.toast-notification-content button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
 @media (hover: hover) {
     .dark-mode-button img:hover {
         transform: scale(1.2);
