@@ -1,5 +1,5 @@
 import React from 'react';
-import Map from '../Map';
+import Map from '../../Components/Map';
 
 function Details() {
     return (
@@ -14,12 +14,26 @@ function Details() {
                         <li>Email: ewells@wribbenhallschool.co.uk</li>
                         <li>Telephone: 01299 405383</li>
                     </ul>
+                    <h4>Address</h4>
+                    <ul>
+                        <li>21 Crundalls Lane</li>
+                        <li>Bewdley</li>
+                        <li>Worcestershire</li>
+                        <li>DY12 1JL</li>
+                    </ul>
                 </div>
                 <div className="card">
                     <h4>Our Governor</h4>
                     <ul>
                         <li>Mrs Linda Minnock</li>
                         <li>Email: lminnock@wribbenhallschool.co.uk</li>
+                    </ul>
+                    <h4>Address</h4>
+                    <ul>
+                        <li>21 Crundalls Lane</li>
+                        <li>Bewdley</li>
+                        <li>Worcestershire</li>
+                        <li>DY12 1JL</li>
                     </ul>
                 </div>
 
@@ -31,12 +45,13 @@ function Details() {
         
             <div className="contact-details">
                 <div className="card">
-                    <h4>Our address</h4>
+                    <h4>School address</h4>
                     <ul>
                         <li>21 Crundalls Lane</li>
                         <li>Bewdley</li>
                         <li>Worcestershire</li>
                         <li>DY12 1JL</li>
+                        <li>01299 405383</li>
                     </ul>
                 </div>
             </div>

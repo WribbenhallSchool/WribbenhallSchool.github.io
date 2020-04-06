@@ -14,11 +14,6 @@ function Nav(props) {
         document.getElementsByTagName("html")[0].classList.toggle("stop-scroll");
     }
 
-    //Scrolls to clicked section
-    const handleSectionClick = (index) => {
-        props.scrollPage(props.sectionIDs[index])
-    }
-
     //Closes menu when clicking away
     const handleBackgroundClick = () => {
         const hamburgerElem = document.getElementsByClassName("hamburger-container");
@@ -26,6 +21,11 @@ function Nav(props) {
 
         document.getElementById("overlay").classList.remove("showOverlay");
         document.getElementsByTagName("html")[0].classList.remove("stop-scroll");
+    }
+
+    //Scrolls to clicked section
+    const handleSectionClick = (index) => {
+        props.scrollPage(props.sectionIDs[index])
     }
 
     const handlePageClick = () => { handleHamburgerClick(); }
@@ -42,7 +42,7 @@ function Nav(props) {
                 <div className="page-link-container">
                     <ul>
                         {props.pageNames.map((page, i) =>
-                            <Link to={page[1]} key={i}><li onClick={handlePageClick} className={page[0] === props.currentPageName ? "page-names nav-active" : "page-names"}>{page[0]}</li></Link>
+                            <Link to={page.url} key={i}><li onClick={handlePageClick} className={page.name === props.currentPageName ? "page-names nav-active" : "page-names"}>{page.name}</li></Link>
                         )}
                     </ul>
                 </div>

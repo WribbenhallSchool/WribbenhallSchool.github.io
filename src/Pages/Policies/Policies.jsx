@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Connection from "../Connection";
+import Connection from "../../Components/Connection";
 
 import Files from './Files';
 

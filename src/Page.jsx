@@ -3,9 +3,9 @@ import React, {Component} from "react";
 import {withRouter} from 'react-router-dom';
 
 // Navigation
-import Dots from "./Dots";
-import Nav from "./Nav";
-import Moon from "./Moon";
+import Dots from "./Components/Dots";
+import Nav from "./Components/Nav";
+import Moon from "./Components/DarkMode";
 
 class Main extends Component {
 

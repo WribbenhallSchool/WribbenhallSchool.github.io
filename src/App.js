@@ -10,29 +10,30 @@ import "./App.css";
 // For react effects
 import "animate.css/animate.min.css"; 
 
-import Section from "./Components/Section";
-import Page from "./Components/Page";
+import Section from "./Section";
+import Page from "./Page";
 
 // Home Page Sections
-import Welcome from "./Components/HomeSections/Welcome";
-import About from "./Components/HomeSections/About";
-import Profile from "./Components/HomeSections/Profile";
-import Details from "./Components/HomeSections/Details";
-import Staff from "./Components/HomeSections/Staff";
+import Welcome from "./Pages/Home/Welcome";
+import About from "./Pages/Home/About";
+import Profile from "./Pages/Home/Profile";
+import Details from "./Pages/Home/Details";
+import Staff from "./Pages/Home/Staff";
 
 // Contact Page Sections
-import Contact from "./Components/ContactSections/Contact";
-import FAQ from "./Components/ContactSections/FAQ";
+import Contact from "./Pages/Contact/Contact";
+import FAQ from "./Pages/Contact/FAQ";
 
 // Policies Page Sections
-import Policies from "./Components/PoliciesSections/Policies";
+import Policies from "./Pages/Policies/Policies";
 
 // Gallery Page Sections
-import Gallery from "./Components/GallerySections/Gallery";
+import Gallery from "./Pages/Gallery/Gallery";
 
 // Calendar Page Sections
-import Calendar from './Components/CalendarSections/Calendar';
+import Calendar from './Pages/Calendar/Calendar';
 
+//404
 import PageNotFound from './404';
 
 
@@ -61,13 +62,14 @@ class App extends Component {
     }
 
     render() {
-        // [["Page name", "URL"]]
-        const pageNames = [
-            ["Home", "/"],
-            ["Contact Us", "/contact"],
-            ["Our Policies", "/policies"],
-            ["Gallery", "/gallery"],
-            ["Calendar", "/calendar"]
+
+        
+        const pages = [ 
+            { name: "Home", url: "/" },
+            { name: "Contact Us", url: "/contact" },
+            { name: "Our Policies", url: "/policies" },
+            { name: "Gallery", url: "/gallery" },
+            { name: "Calendar", url: "/calendar" }
         ];
 
         return (
@@ -77,8 +79,8 @@ class App extends Component {
                     <Switch>
 
                         {/* Home page */}
-                        <Route exact path={pageNames[0][1]} render = {routerprops => (
-                            <Page pageNames={pageNames} pageName={pageNames[0][0]} showDots={true} large={false} >
+                        <Route exact path={pages[0].url} render = {routerprops => (
+                            <Page pageNames={pages} pageName={pages[0].name} showDots={true} large={false} >
                                 <Section id="Welcome" Name="Welcome" darkStyle="custom" lightStyle="custom"> {/* Welcome section */}
                                     <Welcome/> {/* Welcome content */}
                                 </Section>
@@ -98,8 +100,8 @@ class App extends Component {
                         )} />
 
                         {/* Contact page */}
-                        <Route exact path={pageNames[1][1]} render = {routerprops => (
-                            <Page pageNames={pageNames} pageName={pageNames[1][0]} showDots={true} large={false}>
+                        <Route exact path={pages[1].url} render = {routerprops => (
+                            <Page pageNames={pages} pageName={pages[1].name} showDots={true} large={false}>
                                 <Section id="Contact" Name="Contact Us" >
                                     <Contact/> {/* Contact section */}
                                 </Section>
@@ -110,8 +112,8 @@ class App extends Component {
                         )} />
 
                         {/* Policies page */}
-                        <Route exact path={pageNames[2][1]} render = {routerprops => (
-                            <Page pageNames={pageNames} pageName={pageNames[2][0]} showDots={false} large={true}>
+                        <Route exact path={pages[2].url} render = {routerprops => (
+                            <Page pageNames={pages} pageName={pages[2].name} showDots={false} large={true}>
                                 <Section id="Policies" Name="Our Policies" >
                                     <Policies/> {/* Policies section */}
                                 </Section>
@@ -119,8 +121,8 @@ class App extends Component {
                         )} />
 
                         {/* Gallery page */}
-                        <Route exact path={pageNames[3][1]} render = {routerprops => (
-                            <Page pageNames={pageNames} pageName={pageNames[3][0]} showDots={false} large={true}>
+                        <Route exact path={pages[3].url} render = {routerprops => (
+                            <Page pageNames={pages} pageName={pages[3].name} showDots={false} large={true}>
                                 <Section id="Gallery" Name="Gallery" darkStyle="default" lightStyle="default">
                                     <Gallery/> {/* Gallery section */}
                                 </Section>
@@ -128,8 +130,8 @@ class App extends Component {
                         )} />
 
                         {/* Calendar page */}
-                        <Route exact path={pageNames[4][1]} render = {routerprops => (
-                            <Page pageNames={pageNames} pageName={pageNames[4][0]} showDots={false} large={true}>
+                        <Route exact path={pages[4].url} render = {routerprops => (
+                            <Page pageNames={pages} pageName={pages[4].name} showDots={false} large={true}>
                                 <Section id="Calendar" Name="Calendar" darkStyle="default" lightStyle="default">
                                     <Calendar/> {/* Gallery section */}
                                 </Section>
