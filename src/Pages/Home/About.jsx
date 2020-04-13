@@ -23,6 +23,11 @@ function About() {
                     <a href="https://www.wisherefordshire.org/marketplace/cat/vendor/1776">Staffordshire County Council</a>
                 </li>
             </ul>
+            <ul>
+                <li>
+                    <a href="https://raw.githubusercontent.com/EllisCWells/WribbenhallFiles/master/Local%20Offer%20Worestershire.docx">More information (Download)</a>
+                </li>
+            </ul>
             <h3>Quick links:</h3>
             <Link to={{ pathname: '/contact', state: {form: "application"} }} className="link"><h4>Click here to make an application</h4></Link>
             <Link to='/policies'className="link"><h4>Click here to view our policies</h4></Link>
