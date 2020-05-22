@@ -25,7 +25,7 @@ function About() {
             </ul>
             <ul>
                 <li>
-                    <a href="https://raw.githubusercontent.com/EllisCWells/WribbenhallFiles/master/Local%20Offer%20Worestershire.docx">More information (Download)</a>
+                    <a href="https://raw.githubusercontent.com/EllisCWells/WribbenhallFiles/master/Local%20Offer%20Worestershire.docx">Worcestershire Children First</a>
                 </li>
             </ul>
             <h3>Quick links:</h3>
