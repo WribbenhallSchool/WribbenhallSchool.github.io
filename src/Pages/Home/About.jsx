@@ -1,7 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function About() {
+function About(props) {
+
+    const scroll = () => {
+        props.scrollPage("Staff");
+    }
+
     return (
         <React.Fragment>
             <h2>About us</h2>
@@ -29,7 +34,8 @@ function About() {
                 </li>
             </ul>
             <h3>Quick links:</h3>
-            <Link to={{ pathname: '/contact', state: {form: "application"} }} className="link"><h4>Click here to make an application</h4></Link>
+            <Link to={{ pathname: '/contact', state: {form: "application"} }} className="link"><h4>Click here to make a pupil application</h4></Link>
+            <Link to='' className="link" onClick={scroll}><h4>Click here to view our current Vacancies</h4></Link>
             <Link to='/policies'className="link"><h4>Click here to view our policies</h4></Link>
         </React.Fragment>
     );
