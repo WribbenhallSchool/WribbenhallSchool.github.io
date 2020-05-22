@@ -15,15 +15,14 @@ class Staff extends Component {
 
     // Get files from url and stores them in the state
     getFiles = async (url) => {
-        console.log("getting files")
         await fetch(url)
         .then(response => {
             if(response.ok) return response.json();
-        }).then(json => {
-            if(json === undefined) return
+            else throw new Error("No vacancies")
+        })
+        .then(json => {
             let Vacancies = [];
             let tempFiles = []
-            let nonFound = false;
             for (let folder of json){
                 fetch(folder.url)
                 .then(response => {
@@ -38,9 +37,14 @@ class Staff extends Component {
                     Vacancies.push({Name: folder.name, Files: tempFiles})
                     tempFiles = [];
                 })
-            }            
+                .catch((error) => {
+                    console.log(error)
+                });
+            }      
             this.setState({ Vacancies: Vacancies });
-        });
+        })
+        .catch((error) => {});
+        
         
     }
 
@@ -54,7 +58,7 @@ class Staff extends Component {
     render(){
         return (
             <React.Fragment>
-                <h2 style={{textAlign: "center"}}>Our Staff</h2>
+                <h2 style={{textAlign: "center"}}>Our Staff and vacancies</h2>
                 <div className="staff-container">
                     <Employee name="Ellis Wells" img={require("../../Images/EllisWells.png")} statement="I have completed a Post Experience Diploma in Psychology. I have a passion to work with children with additional needs and understand that their environment, interactions and attachment with others has a big impact on their learning." />
                     <Employee name="Sally Wells" img={require("../../Images/SallyWells.png")} statement="I am a Qualified Learning Support Assistant, experienced in SEN Learning Support. I have the patience to support children in their understanding and scaffold their learning." />
