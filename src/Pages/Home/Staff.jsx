@@ -44,8 +44,6 @@ class Staff extends Component {
             this.setState({ Vacancies: Vacancies });
         })
         .catch((error) => {});
-        
-        
     }
 
 
@@ -74,7 +72,7 @@ class Staff extends Component {
                                     <ul>
                                         {
                                             Folder.Files.map((file, x) => 
-                                                <li key={43240 + x}><a href={file.url}><h4>{file.name}</h4></a></li>
+                                                <li key={43240 + x}><a href={file.url} download><h4>{file.name}</h4></a></li>
                                             )
                                         }
                                     </ul>
