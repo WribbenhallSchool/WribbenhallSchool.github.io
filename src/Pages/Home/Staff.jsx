@@ -11,6 +11,10 @@ function Staff() {
                 <Employee name="Sally Wells" img={require("../../Images/SallyWells.png")} statement="I am a Qualified Learning Support Assistant, experienced in SEN Learning Support. I have the patience to support children in their understanding and scaffold their learning." />
                 <Employee name="Amy Wells" img={require("../../Images/AmyWells.jpg")} statement="I have completed a Certificate of Higher Education in Psychology. I have a strong understanding of how to communicate with children, especially those with additional needs and am always looking for exciting and enriching ways to support children in relaxation and play." />
             </div>
+            <div className="card">
+                <h4>Vacancies</h4>
+                <a href="https://raw.githubusercontent.com/EllisCWells/WribbenhallFiles/master/Documents/Ofsted/Published%20Performance%20Table.docx"><h4>Lunch Time Supervisor Advert June 2020</h4></a>
+            </div>
             <div style={{clear: "both"}}></div>
             <a href="https://www.linkedin.com/in/david-c-b491b6106/" rel="noopener noreferrer" target="_blank"><h4 id="trademark">Website made by David Cottrell</h4></a>
         </React.Fragment>
