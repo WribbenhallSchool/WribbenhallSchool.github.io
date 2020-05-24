@@ -55,7 +55,7 @@ class Staff extends Component {
 
 
     componentDidMount(){
-        //this.getFolders("https://api.github.com/repos/EllisCWells/WribbenhallFiles/contents/Vacancies"); 
+        this.getFolders("https://api.github.com/repos/EllisCWells/WribbenhallFiles/contents/Vacancies"); 
     }
 
     //Add link to github incase it messes up
