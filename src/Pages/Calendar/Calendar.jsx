@@ -40,6 +40,7 @@ class Calendar extends Component{
 
     render(){
         const iframeSmall = '<iframe src="https://calendar.zoho.com/embed/748f5c43c7789fe546b5876e4af8d47d398e069addce1554fadeafb31c96bbdd3cd05790438b3f96e598e8944b2a3b8c?title=Wribbenhall School&type=1&l=en&tz=GMT&sh=%5B1%2C1%2C0%5D&v=2" id="iframe-calendar" frameborder="0" scrolling="no" style="width: 100%; height:' + this.state.iframeHeight + 'px; "></iframe>';
+        console.clear();
         return(
             <React.Fragment>
                 <Notifications />

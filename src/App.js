@@ -138,7 +138,7 @@ class App extends Component {
                             </Page>
                         )} />
 
-                        <Route component={PageNotFound} /> {/* Go home on 404 */}
+                        <Route render={(props) => <PageNotFound pages={pages} />} />
 
                     </Switch>
                 </BrowserRouter>
