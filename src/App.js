@@ -93,7 +93,7 @@ class App extends Component {
                                 <Section id="Details" Name="Our Details"> {/* Details section */}
                                     <Details/> {/* Details content */}
                                 </Section>
-                                <Section id="Staff" Name="Our Staff" darkStyle="custom"> {/* Staff section */}
+                                <Section id="Staff" Name="Our Staff and vacancies" darkStyle="custom"> {/* Staff section */}
                                     <Staff/> {/* Staff content */}
                                 </Section>
                             </Page>

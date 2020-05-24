@@ -141,7 +141,12 @@ p { letter-spacing: 1px; line-height: 22px; text-align: justify; }
     .toast-notification span{
         padding: 5px !important;
     }
-
+    .Page-Not-Found-Content .card{
+        width: 77%;
+    }
+    .Page-Not-Found-Content{
+        height: 80vh !important;
+    }
 }
 
 @media only screen and (max-height: 520px) {
@@ -159,5 +164,15 @@ p { letter-spacing: 1px; line-height: 22px; text-align: justify; }
 @media only screen and (max-width: 320px) {
     h1 { margin: 0; font-size: 24px;}
     p  { font-size: 9px; line-height: 10px; }
+}
+
+
+.Page-Not-Found-Content{
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 

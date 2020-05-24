@@ -13,8 +13,8 @@ class Staff extends Component {
 
     }
 
-    // Get files from url and stores them in the state
-    getFiles = async (url) => {
+    //Gets folder stored within /Vacancies
+    getFolders = async (url) => {
         await fetch(url)
         .then(response => {
             if(response.ok) return response.json();
@@ -22,36 +22,43 @@ class Staff extends Component {
         })
         .then(json => {
             let Vacancies = [];
-            let tempFiles = []
+            let tempFiles = [];
+            //Gets all the files stored within each folder within /Vacancies
             for (let folder of json){
-                fetch(folder.url)
-                .then(response => {
-                    if(response.ok) return response.json();
-                }).then(json => {
-                    for (let file of json){
-                        tempFiles.push({
-                            name: file.name,
-                            url: file.download_url
-                        });
-                    }
-                    Vacancies.push({Name: folder.name, Files: tempFiles})
-                    tempFiles = [];
-                })
-                .catch((error) => {
-                    console.log(error)
-                });
-            }      
+                this.getFolderFiles(folder.url, Vacancies, tempFiles, folder)
+            }
             this.setState({ Vacancies: Vacancies });
         })
-        .catch((error) => {});
+        .catch((error) => {
+            console.clear();
+        });
+    }
+
+    getFolderFiles = async (url, Vacancies, tempFiles, folder) => {
+        fetch(url)
+        .then(response => {
+            if(response.ok) return response.json();
+        }).then(json => {
+            for (let file of json){
+                tempFiles.push({
+                    name: file.name,
+                    url: file.download_url
+                });
+            }
+            Vacancies.push({Name: folder.name, Files: tempFiles})
+            tempFiles = [];
+        })
+        .catch((error) => {
+            console.log(error)
+        });
     }
 
 
     componentDidMount(){
-        this.getFiles("https://api.github.com/repos/EllisCWells/WribbenhallFiles/contents/Vacancies"); 
+        //this.getFolders("https://api.github.com/repos/EllisCWells/WribbenhallFiles/contents/Vacancies"); 
     }
 
-
+    //Add link to github incase it messes up
 
     render(){
         return (
