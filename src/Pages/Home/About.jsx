@@ -25,7 +25,7 @@ function About(props) {
             </ul>
             <ul>
                 <li>
-                    <a href="https://www.wisherefordshire.org/marketplace/cat/vendor/1776">Staffordshire County Council</a>
+                    <a href="https://www.staffordshireconnects.info/kb5/staffordshire/directory/service.page?id=k_BV9WkXsp8&localofferchannel=0">Staffordshire County Council</a>
                 </li>
             </ul>
             <ul>
