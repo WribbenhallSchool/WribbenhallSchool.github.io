@@ -31,7 +31,6 @@ function Profile() {
 
                 <h4>Specifically Excluded Profiles include but are not limited to:-</h4>
                 <ul className="doubleColumnList">
-                    <li>Attention Deficit Hyperactivity Disorder</li>
                     <li>Moderate, 	Severe, and Profound and Multiple Learning Difficulties </li>
                     <li>Pathological Demand Avoidance</li>
                     <li>Oppositional Defiance Disorder</li>

@@ -67,7 +67,7 @@ class Staff extends Component {
                 <div className="staff-container">
                     <Employee name="Ellis Wells" img={require("../../Images/EllisWells.png")} statement="I have completed a Post Experience Diploma in Psychology. I have a passion to work with children with additional needs and understand that their environment, interactions and attachment with others has a big impact on their learning." />
                     <Employee name="Sally Wells" img={require("../../Images/SallyWells.png")} statement="I am a Qualified Learning Support Assistant, experienced in SEN Learning Support. I have the patience to support children in their understanding and scaffold their learning." />
-                    <Employee name="Amy Wells" img={require("../../Images/AmyWells.jpg")} statement="I have completed a Certificate of Higher Education in Psychology. I have a strong understanding of how to communicate with children, especially those with additional needs and am always looking for exciting and enriching ways to support children in relaxation and play." />
+                    {/* <Employee name="Amy Wells" img={require("../../Images/AmyWells.jpg")} statement="I have completed a Certificate of Higher Education in Psychology. I have a strong understanding of how to communicate with children, especially those with additional needs and am always looking for exciting and enriching ways to support children in relaxation and play." /> */}
                 </div>
                 <div className="card">
                     <h3>Vacancies</h3>
@@ -85,7 +85,7 @@ class Staff extends Component {
                                     </ul>
                                 }
                             </div>
-                        ) : <h4>We currently have no Vacancies, please check again soon.</h4>
+                        ) : <h4>We currently have no vacancies.</h4>
                     }
                 </div>
                 <div style={{clear: "both"}}></div>
