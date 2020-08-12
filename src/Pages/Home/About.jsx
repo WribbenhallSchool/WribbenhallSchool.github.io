@@ -17,6 +17,9 @@ function About(props) {
                 across all areas of the curriculum, regardless of their gender, ethnicity, social background 
                 or religion.
             </p>
+
+            <center><img src={require("../../Images/thrive_logo.png")} id="thrive-logo" alt=""/></center>
+
             <h3>Our Local Offers</h3>
             <ul>
                 <li>

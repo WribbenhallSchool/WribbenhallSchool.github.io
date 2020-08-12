@@ -58,7 +58,7 @@ class App extends Component {
         );
     }
     componentDidMount(){
-        this.showAnnouncement("COVID-19: Following Government advice we currently remain open. ");
+        //this.showAnnouncement("COVID-19: Following Government advice we currently remain open. ");
     }
 
     render() {

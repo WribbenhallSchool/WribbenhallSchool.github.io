@@ -19,6 +19,7 @@ function Welcome(props) {
                         children with Social, Emotional and Mental Health conditions to 
                         access education and therapy through de-escalating school-based anxiety.
                     </p>
+            
                 </ScrollAnimation>
             </div>
 

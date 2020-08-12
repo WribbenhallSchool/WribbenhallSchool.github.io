@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 import Employee from './Employee';
 
 class Staff extends Component {
