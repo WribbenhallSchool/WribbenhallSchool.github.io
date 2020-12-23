@@ -114,8 +114,8 @@
 }
 
 #thrive-logo{
-    width: 75px;
-    border-radius: 50%;
+    width: 50%;
+    max-width: 200px;
     margin-top: 10px;
 }
 

@@ -116,7 +116,7 @@ class Gallery extends Component {
 
                 <ImageContainer 
                     images = {this.state.Hawkbatch}
-                    title = "Hawkbatch Forest"
+                    title = "Wyre Forest"
                     description = "One of our commonly used local resources for outdoor activites"
                     handleImgClick={this.handleImgClick}
                     imageLoaded={this.imageLoaded} 
