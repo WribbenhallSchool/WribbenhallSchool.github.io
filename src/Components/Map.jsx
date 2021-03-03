@@ -14,25 +14,11 @@ const contentString = '<div style="padding-right: 10px; padding-bottom: 15px; te
 class Map extends Component {
     static defaultProps = {
         center: {
-            lat: 52.3844956,
-            lng: -2.3029055
+            lat: 52.3844525,
+            lng: -2.3047612
         },
         zoom: 15
     };
-    renderMarkers(map, maps) {
-        let marker = new maps.Marker({
-            position: this.props.center,
-            map,
-            title: 'Hello World!'
-        });
-        let infowindow = new maps.InfoWindow({
-            content: contentString
-        });
-        marker.addListener('click', function() {
-            infowindow.open(map, marker);
-        });
-        infowindow.open(map, marker); //Open by default
-    }
 
     getMapOptions(maps){
         return {
@@ -69,9 +55,9 @@ class Map extends Component {
                 defaultCenter={this.props.center}
                 defaultZoom={this.props.zoom}
                 yesIWantToUseGoogleMapApiInternals
-                onGoogleApiLoaded={({map, maps}) =>
-                    this.renderMarkers(map, maps)
-                }
+                // onGoogleApiLoaded={({map, maps}) =>
+                //     this.renderMarkers(map, maps)
+                // }
                 options={this.getMapOptions}
             />
         );
