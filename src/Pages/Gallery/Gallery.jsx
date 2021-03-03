@@ -5,8 +5,6 @@ import ImageContainer from './ImageContainer';
 
 import "./gallery.css";
 
-//test
-
 class Gallery extends Component {
 
     constructor(props){
