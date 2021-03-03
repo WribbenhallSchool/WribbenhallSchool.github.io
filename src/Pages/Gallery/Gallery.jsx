@@ -5,7 +5,7 @@ import ImageContainer from './ImageContainer';
 
 import "./gallery.css";
 
-//test3
+//test
 
 class Gallery extends Component {
 
