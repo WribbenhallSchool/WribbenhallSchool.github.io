@@ -3,14 +3,6 @@ import GoogleMapReact from 'google-map-react';
 
 const GOOGLE_MAP_API_KEY = process.env.REACT_APP_GOOGLE_MAP_KEY;
 
-const contentString = '<div style="padding-right: 10px; padding-bottom: 15px; text-align: center">' 
-                        + '<p style="margin-bottom: 5px; margin-top: 3px">Wribbenhall School</p>' 
-                        + '<a href="https://www.google.com/maps/place/Wribbenhall+School/@52.3843597,-2.305272,17z/data=!3m1!4b1!4m5!3m4!1s0x48708b322b700475:0x2cd59b2b03b491e5!8m2!3d52.3843597!4d-2.3030833" target="_blank" rel="noopener noreferrer" >'
-                            + 'Open in google maps'
-                        + '</a>'
-                        + '</div>';
-
-
 class Map extends Component {
     static defaultProps = {
         center: {
@@ -55,9 +47,6 @@ class Map extends Component {
                 defaultCenter={this.props.center}
                 defaultZoom={this.props.zoom}
                 yesIWantToUseGoogleMapApiInternals
-                // onGoogleApiLoaded={({map, maps}) =>
-                //     this.renderMarkers(map, maps)
-                // }
                 options={this.getMapOptions}
             />
         );

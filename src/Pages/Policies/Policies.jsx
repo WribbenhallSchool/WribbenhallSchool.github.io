@@ -43,9 +43,9 @@ class Polices extends Component {
     
     componentDidMount(){
         //Provide URL of files and state object to store then under
-        this.getFiles("https://api.github.com/repos/EllisCWells/WribbenhallFiles/contents/Documents/Ofsted", "Ofsted"); 
-        this.getFiles("https://api.github.com/repos/EllisCWells/WribbenhallFiles/contents/Documents/Safeguarding", "Safeguarding");
-        this.getFiles("https://api.github.com/repos/EllisCWells/WribbenhallFiles/contents/Documents/School policy documents", "Policies");
+        this.getFiles("https://api.github.com/repos/WribbenhallSchool/Files/contents/Documents/Ofsted", "Ofsted"); 
+        this.getFiles("https://api.github.com/repos/WribbenhallSchool/Files/contents/Documents/Safeguarding", "Safeguarding");
+        this.getFiles("https://api.github.com/repos/WribbenhallSchool/Files/contents/Documents/School policy documents", "Policies");
     }
 
 
