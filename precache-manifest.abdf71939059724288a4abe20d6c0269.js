@@ -20,12 +20,12 @@ self.__precacheManifest = [
     "url": "/static/js/2.78f80419.chunk.js"
   },
   {
-    "revision": "1487b2efb8eae5a6feae517904bf413c",
-    "url": "/static/media/ForestSilhouette2.1487b2ef.png"
-  },
-  {
     "revision": "6fd02e826c22a2195e2e4812ff4dbbbe",
     "url": "/static/media/ForestSilhouette1.6fd02e82.png"
+  },
+  {
+    "revision": "1487b2efb8eae5a6feae517904bf413c",
+    "url": "/static/media/ForestSilhouette2.1487b2ef.png"
   },
   {
     "revision": "5dbf7be55cd587e5695244abd96a99c1",
