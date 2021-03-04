@@ -117,6 +117,7 @@
     width: 50%;
     max-width: 200px;
     margin-top: 10px;
+    border-radius: 20px;
 }
 
 @media (hover: hover) {
