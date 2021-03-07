@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import Notifications, {notify} from 'react-notify-toast'; //Toast notifications
 
 import smoothscroll from 'smoothscroll-polyfill'; //Adds smooth scroll support for unsupporting browsers (safari)
@@ -75,7 +75,7 @@ class App extends Component {
         return (
             <div className="App">
                 <Notifications />
-                <BrowserRouter>
+                <HashRouter>
                     <Switch>
 
                         {/* Home page */}
@@ -138,10 +138,10 @@ class App extends Component {
                             </Page>
                         )} />
 
-                        <Route render={(props) => <PageNotFound pages={pages} />} />
+                        <Route render={(props) => <PageNotFound pages={pages} />}  />
 
                     </Switch>
-                </BrowserRouter>
+                </HashRouter>
             </div>
         );
     }
