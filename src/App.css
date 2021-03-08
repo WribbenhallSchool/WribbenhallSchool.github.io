@@ -10,9 +10,11 @@
     width: 60%;
     max-width: 650px;
     padding: 40px;
-    padding-top: 200px;
     height: 100%;
     margin: 0 auto;
+}
+#About > .section-content{
+    padding-top: 200px;
 }
 .section-large {
     width: 80% !important; 
@@ -91,7 +93,7 @@ p { letter-spacing: 1px; line-height: 22px; text-align: justify; }
     .section-content { 
         width: 77%;
         padding: 15px;
-        padding-top: 200px;
+        padding-top: 100px;
     }
     /* Reduced font sizes */
     ul li { font-size: 12px; margin-top: 5px; }
